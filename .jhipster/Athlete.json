@@ -1,0 +1,30 @@
+{
+    "name": "Athlete",
+    "fields": [
+        {
+            "fieldName": "athleteName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "registrationNumber",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "athleteScore",
+            "otherEntityName": "score",
+            "otherEntityRelationshipName": "athlete"
+        }
+    ],
+    "changelogDate": "20181024211551",
+    "entityTableName": "athlete",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

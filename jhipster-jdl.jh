@@ -1,0 +1,27 @@
+// JDL definition for application 'resultsjh' generated with command 'jhipster export-jdl'
+
+entity Score {
+  total BigDecimal,
+  difficulty BigDecimal,
+  neutralDeductions BigDecimal
+}
+entity CompSession {
+  sessionName String,
+  level String
+}
+entity Athlete {
+  athleteName String,
+  registrationNumber String
+}
+entity Apparatus {
+  apparatusName String,
+  competitionType String
+}
+
+relationship OneToMany {
+	CompSession{SessionScores} to Score{session(SessionName)},
+    Athlete{AthleteScore} to Score{athlete(athleteName)},
+    Apparatus{apparatusScore} to Score{apparatus(apparatusName)}
+    
+}
+paginate Score, Athlete with infinite-scroll
