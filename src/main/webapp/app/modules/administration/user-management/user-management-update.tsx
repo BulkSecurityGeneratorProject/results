@@ -104,7 +104,7 @@ export class UserManagementUpdate extends React.Component<IUserManagementUpdateP
                     validate={{
                       maxLength: {
                         value: 50,
-                        errorMessage: 'This field cannot be longer than {{ max }} characters.'
+                        errorMessage: 'This field cannot be longer than 50 characters.'
                       }
                     }}
                     value={user.firstName}
@@ -119,7 +119,7 @@ export class UserManagementUpdate extends React.Component<IUserManagementUpdateP
                     validate={{
                       maxLength: {
                         value: 50,
-                        errorMessage: 'This field cannot be longer than {{ max }} characters.'
+                        errorMessage: 'This field cannot be longer than 50 characters.'
                       }
                     }}
                     value={user.lastName}
@@ -168,12 +168,14 @@ export class UserManagementUpdate extends React.Component<IUserManagementUpdateP
                   </AvInput>
                 </AvGroup>
                 <Button tag={Link} to="/admin/user-management" replace color="info">
-                  <FontAwesomeIcon icon="arrow-left" />&nbsp;
+                  <FontAwesomeIcon icon="arrow-left" />
+                  &nbsp;
                   <span className="d-none d-md-inline">Back</span>
                 </Button>
                 &nbsp;
                 <Button color="primary" type="submit" disabled={isInvalid || updating}>
-                  <FontAwesomeIcon icon="save" />&nbsp; Save
+                  <FontAwesomeIcon icon="save" />
+                  &nbsp; Save
                 </Button>
               </AvForm>
             )}
