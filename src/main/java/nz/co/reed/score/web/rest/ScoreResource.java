@@ -33,7 +33,7 @@ public class ScoreResource {
 
     private static final String ENTITY_NAME = "score";
 
-    private ScoreRepository scoreRepository;
+    private final ScoreRepository scoreRepository;
 
     public ScoreResource(ScoreRepository scoreRepository) {
         this.scoreRepository = scoreRepository;
@@ -93,7 +93,7 @@ public class ScoreResource {
         log.debug("REST request to get a page of Scores");
         Page<Score> page = scoreRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/scores");
-        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+        return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 
     /**

@@ -28,7 +28,7 @@ public class ApparatusResource {
 
     private static final String ENTITY_NAME = "apparatus";
 
-    private ApparatusRepository apparatusRepository;
+    private final ApparatusRepository apparatusRepository;
 
     public ApparatusResource(ApparatusRepository apparatusRepository) {
         this.apparatusRepository = apparatusRepository;

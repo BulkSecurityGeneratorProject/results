@@ -104,7 +104,7 @@ export class UserManagementUpdate extends React.Component<IUserManagementUpdateP
                     validate={{
                       maxLength: {
                         value: 50,
-                        errorMessage: 'This field cannot be longer than {{ max }} characters.'
+                        errorMessage: 'This field cannot be longer than 50 characters.'
                       }
                     }}
                     value={user.firstName}
@@ -119,7 +119,7 @@ export class UserManagementUpdate extends React.Component<IUserManagementUpdateP
                     validate={{
                       maxLength: {
                         value: 50,
-                        errorMessage: 'This field cannot be longer than {{ max }} characters.'
+                        errorMessage: 'This field cannot be longer than 50 characters.'
                       }
                     }}
                     value={user.lastName}

@@ -3,7 +3,7 @@
     "promptValues": {
       "packageName": "nz.co.reed.score"
     },
-    "jhipsterVersion": "5.5.0",
+    "jhipsterVersion": "5.7.0",
     "applicationType": "monolith",
     "baseName": "resultsjh",
     "packageName": "nz.co.reed.score",
@@ -26,6 +26,8 @@
     "clientPackageManager": "npm",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
-    "enableTranslation": false
+    "enableTranslation": false,
+    "enableHibernateCache": false,
+    "otherModules": []
   }
 }

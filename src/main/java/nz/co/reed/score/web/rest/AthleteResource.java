@@ -33,7 +33,7 @@ public class AthleteResource {
 
     private static final String ENTITY_NAME = "athlete";
 
-    private AthleteRepository athleteRepository;
+    private final AthleteRepository athleteRepository;
 
     public AthleteResource(AthleteRepository athleteRepository) {
         this.athleteRepository = athleteRepository;
@@ -93,7 +93,7 @@ public class AthleteResource {
         log.debug("REST request to get a page of Athletes");
         Page<Athlete> page = athleteRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/athletes");
-        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+        return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 
     /**

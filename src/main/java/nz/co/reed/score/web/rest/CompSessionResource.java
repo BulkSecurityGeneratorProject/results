@@ -28,7 +28,7 @@ public class CompSessionResource {
 
     private static final String ENTITY_NAME = "compSession";
 
-    private CompSessionRepository compSessionRepository;
+    private final CompSessionRepository compSessionRepository;
 
     public CompSessionResource(CompSessionRepository compSessionRepository) {
         this.compSessionRepository = compSessionRepository;
