@@ -1,0 +1,30 @@
+{
+    "name": "Apparatus",
+    "fields": [
+        {
+            "fieldName": "apparatusName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "competitionType",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "apparatusScore",
+            "otherEntityName": "score",
+            "otherEntityRelationshipName": "apparatus"
+        }
+    ],
+    "changelogDate": "20181024211907",
+    "entityTableName": "apparatus",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

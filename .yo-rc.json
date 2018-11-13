@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "nz.co.reed.score"
+    },
+    "jhipsterVersion": "5.5.0",
+    "applicationType": "monolith",
+    "baseName": "resultsjh",
+    "packageName": "nz.co.reed.score",
+    "packageFolder": "nz/co/reed/score",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjdmYzg4OGYyOGM5MTAzODQ5MzFiZGYyZDY0Yzg0MDkzZThmMGJiNzZmN2EyYTRkZWNjZTY5YTg1MGUwNjhlNDEzZGU0ZWU4ZGNhYmM5MmRhMjczNjQ4NmRhMDA0M2I0YjY0ZDUzNTdhNWEyNmMxNzQ2YTE0MzMyYjZiNDk2YjU=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false,
+    "enableHibernateCache": false
+  }
+}

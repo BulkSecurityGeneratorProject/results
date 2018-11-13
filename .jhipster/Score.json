@@ -1,0 +1,46 @@
+{
+    "name": "Score",
+    "fields": [
+        {
+            "fieldName": "total",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "difficulty",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "neutralDeductions",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "session",
+            "otherEntityName": "compSession",
+            "otherEntityField": "sessionName"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "athlete",
+            "otherEntityName": "athlete",
+            "otherEntityField": "athleteName"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "apparatus",
+            "otherEntityName": "apparatus",
+            "otherEntityField": "apparatusName"
+        }
+    ],
+    "changelogDate": "20181024210509",
+    "entityTableName": "score",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
