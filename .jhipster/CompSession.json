@@ -1,0 +1,30 @@
+{
+    "name": "CompSession",
+    "fields": [
+        {
+            "fieldName": "sessionName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "level",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "sessionScores",
+            "otherEntityName": "score",
+            "otherEntityRelationshipName": "session"
+        }
+    ],
+    "changelogDate": "20181024210829",
+    "entityTableName": "comp_session",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
